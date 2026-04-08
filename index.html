@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ORION-X | Tactical Wearable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <header>
+        <nav>
+            <div class="logo">ORION<span>-X</span></div>
+            <ul>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#preorder">Pre-Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>BIOMETRIC <span>EVOLUTION.</span></h1>
+                <p>Advanced neural tracking for the digital age.</p>
+                <button id="mainBtn">Initialize Core</button>
+            </div>
+        </section>
+
+        <article id="specs">
+            <div class="bento-grid">
+                <div class="item wide" onmouseover="glow(this)" onmouseout="off(this)">
+                    <h3>Neural Engine</h3>
+                    <p>4.2 TFLOPs of onboard AI processing.</p>
+                </div>
+                <div class="item" onmouseover="glow(this)" onmouseout="off(this)">
+                    <h3>Sync</h3>
+                    <p>0.2ms Latency.</p>
+                </div>
+                <div class="item" onmouseover="glow(this)" onmouseout="off(this)">
+                    <h3>Build</h3>
+                    <p>Carbon Fiber.</p>
+                </div>
+            </div>
+        </article>
+
+        <section id="preorder">
+            <form id="proForm">
+                <h2>Join the Beta</h2>
+                <input type="email" id="email" placeholder="SECURE_EMAIL@DOMAIN.COM" required>
+                <button type="submit">Submit Credentials</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

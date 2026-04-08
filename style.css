@@ -1,0 +1,84 @@
+:root {
+    --neon: #00f2ff;
+    --bg: #050505;
+    --card: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none; /* Hides default cursor */
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    background: var(--neon);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none; /* Important: allows clicking through the cursor */
+    z-index: 9999;
+    box-shadow: 0 0 15px var(--neon), 0 0 30px var(--neon);
+    transition: transform 0.1s ease-out;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.logo span { color: var(--neon); text-shadow: 0 0 10px var(--neon); }
+
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px 10%;
+}
+
+.item {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.item.wide { grid-column: span 2; }
+
+
+#preorder {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+#proForm {
+    background: linear-gradient(145deg, #111, #080808);
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px dashed var(--neon);
+}
+
+input {
+    background: transparent;
+    border: 1px solid #333;
+    padding: 15px;
+    color: white;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
